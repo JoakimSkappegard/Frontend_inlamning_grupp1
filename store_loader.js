@@ -1,5 +1,4 @@
-
-window.onload = loadFakeStoreAPI()
+window.onload = loadFakeStoreAPI();
 
 function loadFakeStoreAPI() {
   console.log("laddar api");
@@ -19,20 +18,21 @@ function loadFakeStoreAPI() {
                               <!-- Product image-->
                               <img class="card-img-top" src=" 
                               ` +
-          element.image+
-          
+          element.image +
           `
-                              " alt="..." />
+                              " alt=` +
+          element.title +
+          ` style = "max-height:200px; object-fit: contain;" />
                               <!-- Product details-->
                               <div class="card-body p-4">
                                   <div class="text-center">
                                       <!-- Product name-->
                                       <h5 class="fw-bolder">` +
-          element.title+
+          element.title +
           `</h5>
                                       <!-- Product price-->
                                       ` +
-          element.price+
+          element.price +
           `
                                   kr</div>
                               </div>
@@ -42,12 +42,12 @@ function loadFakeStoreAPI() {
                               </div>
                           </div>
                       </div>
-        `
+        `;
       });
 
-      output +=`
+      output += `
             </div>
-      `
+      `;
 
       document.getElementById("output").innerHTML = output;
     })
