@@ -11159,3 +11159,13 @@ fieldset:disabled .btn {
     display: none !important;
   }
 }
+
+#thankYouText
+{
+font-size: large;
+color: #198754;
+position: absolute;
+left: 150px;
+top: 50px;
+background-color: #b6effb;
+}
