@@ -99,7 +99,12 @@
           ></div>
           <div class="col-12">
             <div class="card p-3">
-              <form id="delivery-form" novalidate>
+              <form
+                id="delivery-form"
+                novalidate
+                action="thankyou.html"
+                method="GET"
+              >
                 <!-- Name-->
                 <div class="form-group">
                   <label for="exampleFormControlInput1">Name</label>
@@ -168,9 +173,9 @@
                 </div>
                 <!-- Order button-->
                 <div class="d-flex justify-content-center">
-                  <a href="thankyou.html" class="btn btn-outline-dark w-50">
+                  <button type="submit" class="btn btn-outline-dark w-50">
                     Order
-                  </a>
+                  </button>
                 </div>
               </form>
             </div>
